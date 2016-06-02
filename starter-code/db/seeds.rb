@@ -1,3 +1,6 @@
+require '../models/artist'
+
+Artist.destroy_all
 Artist.create({
   name: "Luciano Pavarotti",
   photo_url: "http://artcreationforever.com/images/luciano-pavarotti/luciano-pavarotti-03.jpg",
@@ -6,6 +9,7 @@ Artist.create({
   home_address: "1 Strada Roma"
 })
 
+Manager.destroy_all
 Manager.create({
   name: "Ricky Bobby",
   email: "rbobby@gmail.com",
@@ -13,6 +17,7 @@ Manager.create({
   cell_number: "718-989-1231"
 })
 
+Song.destroy_all
 Song.create({
   title: "The Best Song Ever",
   duration: "3:31",
